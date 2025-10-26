@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dieta de Hambúrguer | 150 Receitas de Lanches Saudáveis e Deliciosos</title>
+  <meta name="description" content="Descubra como comer hambúrguer, pizza, brigadeiro e outros lanches favoritos de forma saudável. 150 receitas que provam que dieta pode ser deliciosa!" />
+  <meta name="theme-color" content="#ff7a00" />
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="src/css/styles.css" />
+</head>
+<body>
+  <main>
+    <!-- Hero Section -->
+    <section class="fullscreen-section hero-section-extended">
+      <!-- Hero Background - Black -->
+      <div class="section-bg gta-style-bg"></div>
+      <div class="section-overlay gta-overlay"></div>
+      
+      <!-- Hero Title - Desktop Layout -->
+      <div class="hero-title-container">
+        <h1 class="hero-title secondary main-title">Coma Alimentos Gostosos<br>e Entre em Forma<br>ao Mesmo Tempo</h1>
+      </div>
+      
+      <!-- Video do Archive.org -->
+      <div class="hero-video-container">
+        <video 
+          class="hero-video-iframe"
+          src="https://ia601003.us.archive.org/25/items/video-teste/video-teste.mp4"
+          autoplay
+          muted
+          playsinline
+          loop
+          preload="auto"
+          controls="false"
+          disablePictureInPicture
+          disableRemotePlayback>
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+        
+        <!-- Custom Play/Pause Button -->
+        <div class="custom-play-button" id="customPlayButton">
+          <div class="play-icon">▶</div>
+        </div>
+        
+        <!-- Custom Progress Bar -->
+        <div class="custom-progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Button Below Video -->
+    <div class="cta-button-container first-cta" style="margin: 40px auto; text-align: center; max-width: 1200px; padding: 0 20px;">
+      <button class="btn cta-button" style="font-size: 18px; padding: 20px 40px; border: none; cursor: pointer;" onclick="document.getElementById('preco').scrollIntoView({behavior: 'smooth'});">Quero Começar Agora</button>
+    </div>
+
+    <!-- Benefícios Section -->
+    <section class="content-section">
+      <div class="content-grid">
+        <div class="content-text">
+          <h2 class="hero-title secondary benefits-title desktop-title">Transforme sua vida<br>com alimentação<br>gostosa e saudável</h2>
+          <h2 class="hero-title secondary benefits-title mobile-title">Transforme<br>sua vida com<br>comida gostosa<br>e saudável</h2>
+          <p>Descubra como uma alimentação equilibrada pode revolucionar sua saúde, aparência e bem-estar em poucos dias.</p>
+          
+          <div class="benefits-checklist">
+            <div class="benefit-item">
+              <div class="benefit-icon">✨</div>
+              <div class="benefit-content">
+                <h3>Fique mais bonito</h3>
+                <p>Veja sua pele, cabelos e unhas rejuvenescer com a nutrição adequada</p>
+              </div>
+            </div>
+            
+            <div class="benefit-item">
+              <div class="benefit-icon">⚡</div>
+              <div class="benefit-content">
+                <h3>Tenha mais disposição e energia</h3>
+                <p>Sinta-se disposto e renovado para as atividades mais pesadas do dia a dia</p>
+              </div>
+            </div>
+            
+            <div class="benefit-item">
+              <div class="benefit-icon">💖</div>
+              <div class="benefit-content">
+                <h3>Melhore seu humor e libido</h3>
+                <p>Mais qualidade de vida, bem-estar e vitalidade em todos os aspectos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-image">
+          <img src="assets/images/moldura1.png" alt="Transforme sua vida com alimentação gostosa e saudável" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Receitas Section -->
+    <section id="receitas" class="content-section">
+      <div class="content-grid">
+        <div class="content-image">
+          <img src="assets/images/moldura2.png" alt="Pare de sofrer com dietas chatas" />
+        </div>
+        <div class="content-text">
+          <h2 class="hero-title secondary">Pare de sofrer com dietas chatas</h2>
+          <p>Chega de salada sem graça e frango grelhado todo dia! Com o Dieta de Hambúrguer você vai comer seus lanches favoritos sem culpa e sem engordar.</p>
+          <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 30px;">
+            <div style="background: rgba(255,255,255,0.1); padding: 12px 20px; border-radius: 25px; border: 1px solid rgba(255,255,255,0.2);">
+              <strong>🍔 Hambúrgueres</strong>
+            </div>
+            <div style="background: rgba(255,255,255,0.1); padding: 12px 20px; border-radius: 25px; border: 1px solid rgba(255,255,255,0.2);">
+              <strong>🍕 Pizzas</strong>
+            </div>
+            <div style="background: rgba(255,255,255,0.1); padding: 12px 20px; border-radius: 25px; border: 1px solid rgba(255,255,255,0.2);">
+              <strong>🍫 Brigadeiros</strong>
+            </div>
+            <div style="background: rgba(255,255,255,0.1); padding: 12px 20px; border-radius: 25px; border: 1px solid rgba(255,255,255,0.2);">
+              <strong>🍦 Sorvetes</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section 1 -->
+    <div style="text-align: center; padding: 60px 20px; background: #000;">
+      <button class="btn cta-button" style="font-size: 18px; padding: 20px 40px; border: none; cursor: pointer;" onclick="document.getElementById('preco').scrollIntoView({behavior: 'smooth'});">Quero Transformar Minha Vida</button>
+    </div>
+
+    <!-- Coma sem Culpa Section -->
+    <section class="content-section">
+      <div class="content-grid">
+        <div class="content-text">
+          <h2 class="hero-title secondary desktop-title">Coma sem Culpa e Sem Arrependimento</h2>
+          <h2 class="hero-title secondary mobile-title">Coma sem<br>Culpa e sem<br>Arrependimento</h2>
+          <p>Transforme sua relação com a comida! Nossas receitas foram criadas para você desfrutar de cada mordida sem se preocupar com calorias ou culpa.</p>
+          
+          <div class="benefits-checklist">
+            <div class="benefit-item">
+              <div class="benefit-icon">🎯</div>
+              <div class="benefit-content">
+                <h3>Controle de Porções Inteligente</h3>
+                <p>Cada receita tem porções calculadas para satisfazer sem excessos</p>
+              </div>
+            </div>
+            
+            <div class="benefit-item">
+              <div class="benefit-icon">⚖️</div>
+              <div class="benefit-content">
+                <h3>Equilíbrio Nutricional</h3>
+                <p>Proteínas, carboidratos e gorduras balanceadas em cada prato</p>
+              </div>
+            </div>
+            
+            <div class="benefit-item">
+              <div class="benefit-icon">😌</div>
+              <div class="benefit-content">
+                <h3>Paz Mental Total</h3>
+                <p>Coma seus pratos favoritos sabendo que está fazendo bem para o corpo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-image">
+          <img src="assets/images/moldura3.png" alt="Coma sem Culpa e Sem Arrependimento" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Una a Dieta com o Prazer Section -->
+    <section class="content-section">
+      <div class="content-grid">
+        <div class="content-image">
+          <!-- Imagem para desktop -->
+          <img class="desktop-image" src="assets/images/moldura7.png" alt="Una a Dieta com o Prazer de Comer" />
+          <!-- Imagem para mobile -->
+          <img class="mobile-image" src="assets/images/moldura7.png" alt="Una a Dieta com o Prazer de Comer" />
+        </div>
+        <div class="content-text">
+          <h2 class="hero-title secondary">Una a Dieta com o Prazer de Comer</h2>
+          <p>Descubra como é possível manter uma alimentação saudável sem abrir mão do prazer gastronômico. Cada receita é uma celebração do sabor!</p>
+          
+          <div class="benefits-checklist">
+            <div class="benefit-item">
+              <div class="benefit-icon">🍽️</div>
+              <div class="benefit-content">
+                <h3>Experiência Gastronômica Completa</h3>
+                <p>Texturas, aromas e sabores que despertam todos os sentidos</p>
+              </div>
+            </div>
+            
+            <div class="benefit-item">
+              <div class="benefit-icon">❤️</div>
+              <div class="benefit-content">
+                <h3>Satisfação Emocional</h3>
+                <p>Comida que nutre não só o corpo, mas também a alma</p>
+              </div>
+            </div>
+            
+            <div class="benefit-item">
+              <div class="benefit-icon">🎉</div>
+              <div class="benefit-content">
+                <h3>Celebração dos Sabores</h3>
+                <p>Transforme cada refeição em um momento especial</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section 3 -->
+    <div style="text-align: center; padding: 60px 20px; background: #000;">
+      <button class="btn cta-button" style="font-size: 18px; padding: 20px 40px; border: none; cursor: pointer;" onclick="document.getElementById('preco').scrollIntoView({behavior: 'smooth'});">Quero Comer sem Culpa</button>
+    </div>
+
+    <!-- Receitas Gostosas que não Engordam Section -->
+    <section class="content-section">
+      <div class="content-grid">
+        <div class="content-text">
+          <h2 class="hero-title secondary">Receitas Gostosas e que não Engordam</h2>
+          <p>Prove que é possível ter o melhor dos dois mundos: comida deliciosa que ajuda você a manter o peso ideal e se sentir bem consigo mesmo.</p>
+          
+          <div class="benefits-checklist">
+            <div class="benefit-item">
+              <div class="benefit-icon">🔥</div>
+              <div class="benefit-content">
+                <h3>Alto Valor Nutricional</h3>
+                <p>Ingredientes ricos em vitaminas, minerais e antioxidantes</p>
+              </div>
+            </div>
+            
+            <div class="benefit-item">
+              <div class="benefit-icon">⚡</div>
+              <div class="benefit-content">
+                <h3>Metabolismo Acelerado</h3>
+                <p>Combinacões que estimulam a queima natural de gordura</p>
+              </div>
+            </div>
+            
+            <div class="benefit-item">
+              <div class="benefit-icon">💪</div>
+              <div class="benefit-content">
+                <h3>Massa Muscular Preservada</h3>
+                <p>Proteínas de qualidade para manter a força e definição</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-image">
+          <img src="assets/images/moldura4.png" alt="Receitas Gostosas e que não Engordam" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Receitas Fáceis, Rápidas e Baratas Section -->
+    <section class="content-section">
+      <div class="content-grid">
+        <div class="content-image">
+          <img class="smoothies-image" src="assets/images/moldura5.png" alt="Receitas Fáceis, Rápidas e Baratas" />
+        </div>
+        <div class="content-text">
+          <h2 class="hero-title secondary">Receitas Fáceis, Rápidas e Baratas</h2>
+          <p>Perfeitas para o dia a dia corrido! Receitas que cabem no seu bolso, tempo e nível de habilidade culinária, sem comprometer o sabor.</p>
+          
+          <div class="benefits-checklist">
+            <div class="benefit-item">
+              <div class="benefit-icon">💰</div>
+              <div class="benefit-content">
+                <h3>Economia Garantida</h3>
+                <p>Ingredientes acessíveis que rendem muito sem pesar no orçamento</p>
+              </div>
+            </div>
+            
+            <div class="benefit-item">
+              <div class="benefit-icon">⏰</div>
+              <div class="benefit-content">
+                <h3>Preparação Express</h3>
+                <p>Do início ao fim em poucos minutos, ideal para rotinas agitadas</p>
+              </div>
+            </div>
+            
+            <div class="benefit-item">
+              <div class="benefit-icon">👨‍🍳</div>
+              <div class="benefit-content">
+                <h3>Técnicas Simples</h3>
+                <p>Métodos fáceis que qualquer pessoa pode dominar rapidamente</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section 2 -->
+    <div style="text-align: center; padding: 60px 20px; background: #000;">
+      <button class="btn cta-button" style="font-size: 18px; padding: 20px 40px; border: none; cursor: pointer;" onclick="document.getElementById('preco').scrollIntoView({behavior: 'smooth'});">Quero Começar Minha Jornada</button>
+    </div>
+
+    <!-- Opções para Todas as Dietas Section -->
+    <section class="content-section">
+      <div class="content-grid">
+        <div class="content-text">
+          <h2 class="hero-title secondary restricoes-title">Receitas para Todas as Restrições</h2>
+          
+          <div class="benefits-checklist">
+            <div class="benefit-item">
+              <div class="benefit-icon">🌱</div>
+              <div class="benefit-content">
+                <h3>Vegetarianas</h3>
+                <p>Receitas sem carne, mas com todo o sabor e proteína que você precisa</p>
+              </div>
+            </div>
+            
+            <div class="benefit-item">
+              <div class="benefit-icon">🥬</div>
+              <div class="benefit-content">
+                <h3>Veganas</h3>
+                <p>100% plant-based, sem ingredientes de origem animal</p>
+              </div>
+            </div>
+            
+            <div class="benefit-item">
+              <div class="benefit-icon">🥛</div>
+              <div class="benefit-content">
+                <h3>Zero Lactose</h3>
+                <p>Alternativas deliciosas sem leite e derivados</p>
+              </div>
+            </div>
+            
+            <div class="benefit-item">
+              <div class="benefit-icon">🌾</div>
+              <div class="benefit-content">
+                <h3>Sem Glúten</h3>
+                <p>Receitas livres de glúten para quem tem sensibilidade ou celíacos</p>
+              </div>
+            </div>
+            
+            <div class="benefit-item">
+              <div class="benefit-icon">🍯</div>
+              <div class="benefit-content">
+                <h3>Zero Açúcar</h3>
+                <p>Doces e sobremesas sem açúcar refinado, adoçados naturalmente</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-image">
+          <img src="assets/images/moldura6.png" alt="Receitas para Todas as Dietas e Restrições" />
+        </div>
+      </div>
+    </section>
+
+    <!-- App Preview Section -->
+    <section class="content-section" style="padding-top: 60px; padding-bottom: 200px;">
+      <!-- Título centralizado -->
+      <div style="text-align: center; margin-bottom: 80px;">
+        <h2 class="hero-title secondary app-title-desktop" style="line-height: 1.2; padding-top: 10px;">Disponível Agora em:</h2>
+        <h2 class="hero-title secondary app-title-mobile" style="line-height: 1.2; padding-top: 10px; display: none;">Disponível<br>agora em:</h2>
+      </div>
+      
+      <div class="content-grid section-container" style="position: relative;">
+        <div class="content-image">
+          <div class="mobile-border-wrapper">
+            <img src="assets/images/iphone.3d.png" alt="Plataforma Dieta de Hambúrguer em iPhone 3D" />
+          </div>
+        </div>
+        <div class="content-text" style="position: relative;">
+          <!-- Linha divisória -->
+          <div style="position: absolute; left: -40px; top: 0; bottom: 0; width: 1px; background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.2), rgba(255,255,255,0.4), rgba(255,255,255,0.2), transparent);"></div>
+          
+          <h2 class="hero-title secondary">Plataforma<br>Completa com<br>150 Receitas!</h2>
+          <p>Uma plataforma digital organizada e estruturada para transformar sua alimentação. Mais de 150 receitas divididas em módulos específicos para cada momento do seu dia.</p>
+          
+          <div class="benefits-checklist">
+            <div class="benefit-item">
+              <div class="benefit-icon">🌅</div>
+              <div class="benefit-content">
+                <h3>Café da Manhã</h3>
+                <p>Receitas nutritivas e energéticas para começar o dia com o pé direito</p>
+              </div>
+            </div>
+            
+            <div class="benefit-item">
+              <div class="benefit-icon">🍽️</div>
+              <div class="benefit-content">
+                <h3>Almoço & Jantar</h3>
+                <p>Pratos principais balanceados, saborosos e que saciam sua fome</p>
+              </div>
+            </div>
+            
+            <div class="benefit-item">
+              <div class="benefit-icon">🥨</div>
+              <div class="benefit-content">
+                <h3>Lanches</h3>
+                <p>Opções práticas para os intervalos entre as refeições principais</p>
+              </div>
+            </div>
+            
+            <div class="benefit-item">
+              <div class="benefit-icon">🍰</div>
+              <div class="benefit-content">
+                <h3>Sobremesas</h3>
+                <p>Doces saudáveis para satisfazer sua vontade sem sair da dieta</p>
+              </div>
+            </div>
+            
+            <div class="benefit-item">
+              <div class="benefit-icon">🥤</div>
+              <div class="benefit-content">
+                <h3>Bebidas</h3>
+                <p>Refrescos, sucos e vitaminas nutritivas para hidratar e nutrir</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="preco" class="pricing-section">
+      <div class="section-content">
+        <h2 class="hero-title secondary pricing-title-desktop" style="text-align: center; margin-bottom: 40px; line-height: 1.2; padding-top: 20px;">Investimento que gera transformação</h2>
+        <h2 class="hero-title secondary pricing-title-mobile" style="text-align: center; margin-bottom: 40px; line-height: 1.2; padding-top: 20px; display: none;">Investimento<br>que gera<br>transformação</h2>
+        
+        <!-- Pricing Card -->
+        <div class="pricing-card">
+          <div class="discount-badge">🔥 Oferta Limitada</div>
+          <h2 class="hero-title secondary" style="line-height: 1.2; padding-top: 10px;">Promoção se encerra em breve</h2>
+          <div style="color: var(--muted); font-size: 24px; margin-bottom: 10px;">de <span style="text-decoration: line-through; opacity: 0.7;">R$ 197,90</span></div>
+          <div style="color: var(--muted); font-size: 18px; margin-bottom: 5px;">por apenas</div>
+          <div class="pricing-price">R$ 37,90</div>
+          <p style="color: var(--muted); margin-bottom: 40px; font-size: 18px;">Pagamento único • Acesso imediato • Garantia de 7 dias</p>
+          <ul class="pricing-features">
+            <li>Acesso a todas as 150 receitas</li>
+            <li>Macros aproximados</li>
+            <li>Atualizações futuras inclusas</li>
+            <li>Suporte para dúvidas</li>
+            <li>Acesso Vitalício</li>
+          </ul>
+          <a class="btn" href="https://pay.kiwify.com.br/QS2K8dq" target="_blank" style="width: 100%; justify-content: center; margin-top: 40px;">Garantir Meu Acesso</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+      <div class="faq-container">
+        <h2 style="font-size: clamp(28px, 4vw, 48px); font-weight: 600; margin-bottom: 50px; text-align: center; color: rgba(255,255,255,0.9); font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; letter-spacing: -0.5px;">Perguntas Frequentes</h2>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Como acesso a plataforma?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-answer">
+            Após a compra, você recebe um e-mail com seu login e já pode acessar do celular ou computador.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>As receitas são realmente saudáveis?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-answer">
+            Sim. Todas foram criadas com foco em ingredientes de verdade, equilíbrio de macro e micronutrientes, e porções adequadas.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Preciso de utensílios especiais?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-answer">
+            Não. As receitas pedem utensílios comuns de cozinha e indicam alternativas quando possível.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>E se eu não gostar?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-answer">
+            Você tem 7 dias para testar. Se não for pra você, devolvemos 100% do valor.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div style="color: var(--muted); font-size: 14px; margin-bottom: 20px;">
+        © <span id="y"></span> Dieta de Hambúrguer. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="src/js/main.js"></script>
+</body>
+</html>

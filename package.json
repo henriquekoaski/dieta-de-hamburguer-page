@@ -1,0 +1,46 @@
+{
+  "name": "dieta-de-hamburguer-page",
+  "version": "1.0.0",
+  "description": "Landing page profissional para Dieta de Hambúrguer - 150 receitas saudáveis e deliciosas",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server --port=3000 --open=/index.html",
+    "dev": "npx live-server --port=3000 --open=/index.html --watch=src",
+    "build": "echo 'Build completed - static site ready for deployment'",
+    "lint": "npx htmlhint index.html",
+    "format": "npx prettier --write src/**/*.{css,js} index.html"
+  },
+  "keywords": [
+    "dieta",
+    "hamburguer",
+    "receitas",
+    "saudavel",
+    "landing-page",
+    "nutricao",
+    "culinaria"
+  ],
+  "author": {
+    "name": "Henrique Koaski",
+    "url": "https://dietadehamburguer.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henriquekoaski/dieta-de-hamburguer-page.git"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "htmlhint": "^1.1.4",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
+
