@@ -359,23 +359,37 @@ iframe[src*="youtube.com"] {
     padding-top: 5px !important;
   }
   
-  /* Reduzir espaçamento entre moldura3.png e moldura4.png na versão mobile */
+  /* Ajuste do espaçamento entre moldura3.png e moldura4.png (mobile) */
   .content-section:has(.content-image img[src*="moldura3.png"]) {
-    padding-bottom: 0px !important;
-    margin-bottom: -30px !important;
+    padding-bottom: 2px !important;
+    margin-bottom: 0px !important;
   }
   
   .content-section:has(.content-image img[src*="moldura4.png"]) {
-    padding-top: 5px !important;
+    padding-top: 3px !important;
+    margin-top: 0px !important;
+    /* diminuir espaçamento inferior da moldura4 (aproximar com a próxima) */
+    padding-bottom: 2px !important;
+    margin-bottom: 0px !important;
   }
   
-  /* Reduzir espaçamento entre moldura5.png e moldura6.png na versão mobile */
+  /* Reduzir espaçamento entre moldura5.png (inferior) e moldura6.png (superior) no mobile */
   .content-section:has(.content-image img[src*="moldura5.png"]) {
-    padding-top: 5px !important;
+    padding-bottom: 20px !important;
+    margin-bottom: -10px !important;
+    /* diminuir mais o espaçamento superior da moldura5 (aproximar com a anterior) */
+    padding-top: 8px !important;
+    margin-top: 0px !important;
   }
   
   .content-section:has(.content-image img[src*="moldura6.png"]) {
-    padding-top: 5px !important;
+    padding-top: 3px !important;
+  }
+
+  /* diminuir um pouco o espaçamento superior da moldura7 no mobile */
+  .content-section:has(.content-image img[src*="moldura7.png"]) {
+    padding-top: 10px !important;
+    margin-top: 0px !important;
   }
   
   
@@ -956,6 +970,16 @@ iframe[src*="youtube.com"] {
       font-size: clamp(28px, 6vw, 40px) !important;
       line-height: 1.2 !important;
       margin-bottom: 20px !important;
+    }
+
+    /* Aumentar espaçamento superior apenas para:
+       - "Receitas para Todas as Restrições" (tem classe .restricoes-title)
+       - "Receitas Gostosas e que não Engordam" (seção com moldura4.png) */
+    .content-section:has(.restricoes-title) .content-text .hero-title.secondary {
+      margin-top: 56px !important;
+    }
+    .content-section:has(.content-image img[src*="moldura4.png"]) .content-text .hero-title.secondary {
+      margin-top: 56px !important;
     }
   }
 
