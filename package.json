@@ -7,6 +7,7 @@
     "start": "npx live-server --port=3000 --open=/index.html",
     "dev": "npx live-server --port=3000 --open=/index.html --watch=src",
     "build": "echo 'Build completed - static site ready for deployment'",
+    "favicons": "node scripts/generateFavicons.js",
     "lint": "npx htmlhint index.html",
     "format": "npx prettier --write src/**/*.{css,js} index.html"
   },
@@ -29,9 +30,10 @@
     "url": "https://github.com/henriquekoaski/dieta-de-hamburguer-page.git"
   },
   "devDependencies": {
-    "live-server": "^1.2.2",
     "htmlhint": "^1.1.4",
-    "prettier": "^3.0.0"
+    "live-server": "^1.2.2",
+    "prettier": "^3.0.0",
+    "sharp": "^0.34.4"
   },
   "engines": {
     "node": ">=14.0.0",
@@ -43,4 +45,3 @@
     "not dead"
   ]
 }
-
